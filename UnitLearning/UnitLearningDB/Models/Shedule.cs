@@ -6,6 +6,7 @@ namespace UnitLearningDB
     {
         public int Id { get; }
         public DateTime StartDate { get; set; }
+        // Длительность курса
         public int Duration { get; set; }
     }
 }

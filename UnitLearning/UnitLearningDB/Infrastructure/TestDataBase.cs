@@ -27,5 +27,10 @@ namespace UnitLearningDB.Infrastructure
         {
             throw new NotImplementedException();
         }
+
+        public Shedule GetShedule()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
