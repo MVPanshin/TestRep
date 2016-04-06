@@ -40,16 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\City.cs" />
-    <Compile Include="Models\Company.cs" />
-    <Compile Include="Models\Shedule.cs" />
+    <Compile Include="Models\Clients\City.cs" />
+    <Compile Include="Models\Clients\Company.cs" />
+    <Compile Include="Models\LearnProcess\Manager.cs" />
+    <Compile Include="Models\LearnProcess\Role.cs" />
+    <Compile Include="Models\LearnProcess\Shedule.cs" />
     <Compile Include="Infrastructure\TestDataBase.cs" />
-    <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\Teacher.cs" />
-    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Clients\Student.cs" />
+    <Compile Include="Models\Base\Teacher.cs" />
+    <Compile Include="Models\Base\Course.cs" />
     <Compile Include="Infrastructure\IDataBase.cs" />
-    <Compile Include="Models\Directions.cs" />
-    <Compile Include="Models\VisitCoursesFromShedule.cs" />
+    <Compile Include="Models\Base\Directions.cs" />
+    <Compile Include="Models\LearnProcess\StatusCode.cs" />
+    <Compile Include="Models\LearnProcess\VisitCoursesFromShedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
