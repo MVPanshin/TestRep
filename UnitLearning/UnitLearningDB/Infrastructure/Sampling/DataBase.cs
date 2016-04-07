@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitLearningDB
+namespace UnitLearningDB.Infrastructure.Sampling
 {
-   public enum Direction { Database, Linux, Windows, Java, Csharp, VBA }
+    class DataBase
+    {
+    }
 }

@@ -1,11 +1,8 @@
 ﻿namespace UnitLearningDB
 {
-    public class Student
+    public class Student : BaseMan
     {
         public int StudentID { get; set; }
-
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public string LatinName { get; set; }
         public string email { get; set; }
 

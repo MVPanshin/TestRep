@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace UnitLearningDB
 {
-    public interface IDataBase
+    public interface IDataAccess
     {
         // Получение списка курсов
-        ICollection<Course> GetAllCources();
-        ICollection<Course> GetAllCourcesByDirection(Direction direct);
+        IEnumerable<Course> GetAllCources();
+        IEnumerable<Course> GetAllCourcesByDirection(Direction direct);
 
         // Получение курса по коду
         Course GetCourceByCode(string code);
 
         // Список преподавателей
-        ICollection<Teacher> GetAllTeacher();
+        IEnumerable<Teacher> GetAllTeacher();
 
         // Расписание курсов
         Shedule GetShedule();
