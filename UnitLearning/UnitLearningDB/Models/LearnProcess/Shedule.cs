@@ -4,14 +4,15 @@ namespace UnitLearningDB
 {
     public class Shedule
     {
-        public int Id { get; }
+        public int SheduleId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
         public virtual StatusCode StatusCode { get; set; }
 
         // куратор курса
-        public Manager Manger { get; set; }
+        public virtual int? ManagerID { get; set; }
+        public virtual Manager Manger { get; set; }
 
         // Длительность курса
         public int Duration { get; set; }
@@ -20,7 +21,12 @@ namespace UnitLearningDB
         public int CurrentState { get; set; }
         public int FullState { get; set; }
 
+        // Какой курс идет
+        public virtual int? CourseID { get; set; }
         public virtual Course Course { get; set; }
+
+        // Кокой препод читает
+        public virtual int? TeacherID { get; set; }
         public virtual Teacher Teacher { get; set; }
     }
 }

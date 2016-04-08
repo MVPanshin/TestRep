@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitLearningDB
 {
-    public interface IDataAccess
+    public interface IRepository
     {
         // Получение списка курсов
         IEnumerable<Course> GetAllCources();

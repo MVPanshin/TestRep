@@ -9,14 +9,17 @@ using UnitLearningDB;
 namespace UnitLearningDB.Infrastructure
 {
     // Класс БД EntityFramework
-    public class DataContext: DbContext
+    public class DataContext: DbContext, IDataBase
     {
-        public DataContext():base("UnitLearningDB")
+        public DataContext()
+            :base("UnitLearningDB")
         {
+
         }
 
         // Базовые таблицы (модели Base)
         public DbSet<Course> Courses { get; set; }
+        public DbSet<CourseBenefit> CourseBenefits { get; set; }
         public DbSet<Direction> Directions { get; set; }
         public DbSet<Manager> Managers { get; set; }
         public DbSet<Role> Roles { get; set; }

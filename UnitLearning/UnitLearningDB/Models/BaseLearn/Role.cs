@@ -9,6 +9,7 @@ namespace UnitLearningDB
         public string DescriptionsRole { get; set; }
 
         // Базовая роль
+        public virtual int? BaseRoleID { get; set; }
         public virtual Role BaseRole { get; set; }
         // Роли наследники
         public virtual IEnumerable<Role> InternalRoles { get; set; }
