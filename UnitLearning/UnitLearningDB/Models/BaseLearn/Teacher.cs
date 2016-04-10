@@ -2,7 +2,7 @@
 
 namespace UnitLearningDB
 {
-    public class Teacher : BaseMan
+    public class Teacher : UserBase
     {
         public int TeacherID { get; set; }
 

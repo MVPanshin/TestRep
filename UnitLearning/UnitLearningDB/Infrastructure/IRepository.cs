@@ -8,6 +8,10 @@ namespace UnitLearningDB
 {
     public interface IRepository
     {
+        #region UserBase
+        UserBase FindUser(string login, string password);
+        #endregion
+
         #region Курсы и все что с ними связано
         // Получение списка курсов
         IEnumerable<Course> GetAllCources();

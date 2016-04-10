@@ -2,7 +2,7 @@
 
 namespace UnitLearningDB
 {
-    public class Manager: BaseMan
+    public class Manager: UserBase
     {
         public int ManagerID { get; set; }
         

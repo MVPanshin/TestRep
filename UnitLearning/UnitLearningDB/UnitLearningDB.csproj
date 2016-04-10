@@ -71,7 +71,7 @@
     <Compile Include="Models\BaseLearn\Directions.cs" />
     <Compile Include="Models\LearnProcess\StatusCode.cs" />
     <Compile Include="Models\LearnProcess\VisitCoursesFromShedule.cs" />
-    <Compile Include="Models\BaseClasses\BaseMan.cs" />
+    <Compile Include="Models\BaseClasses\UserBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
