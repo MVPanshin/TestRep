@@ -28,9 +28,10 @@ namespace UnitLearning.Infrastructure
             }
             else
             {
-                RedirectToAction("Account", "Login");
-                return null;
+               // RedirectToAction("Account", "Login");
+               // return null;
             }
+            return null;
             /*var user = new Manager();
             Session["CurUser"] = user;
             return user;*/

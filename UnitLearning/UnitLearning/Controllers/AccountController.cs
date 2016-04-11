@@ -48,7 +48,7 @@ namespace UnitLearning.Controllers
                 }
             }
 
-            return null;
+            return View(model);
         }
 
         [HttpGet]
